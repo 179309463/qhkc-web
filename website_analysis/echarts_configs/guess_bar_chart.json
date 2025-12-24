@@ -1,0 +1,99 @@
+{
+  "backgroundColor": {
+    "type": "pattern",
+    "image": {},
+    "repeat": "repeat"
+  },
+  "title": {
+    "text": "纸浆2605 涨跌竞猜",
+    "x": "center",
+    "textStyle": {
+      "fontSize": 14,
+      "fontWeight": "normal"
+    },
+    "subtext": "2025/12/24",
+    "top": 10,
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "backgroundColor": "rgba(255,255,255,0.8)",
+    "formatter": "{b}<br/>{a0}: {c0}%<br />{a1}: {c1}%",
+    "axisPointer": {
+      "type": "shadow"
+    },
+    "confine": true
+  },
+  "legend": {
+    "data": [
+      "看涨",
+      "看跌"
+    ],
+    "top": 50,
+    "itemHeight": 8,
+    "itemWidth": 16
+  },
+  "grid": {
+    "height": 80
+  },
+  "xAxis": {
+    "show": false,
+    "type": "value"
+  },
+  "yAxis": {
+    "show": false,
+    "type": "category",
+    "data": [
+      "涨跌竞猜"
+    ]
+  },
+  "series": [
+    {
+      "name": "看涨",
+      "type": "bar",
+      "stack": "total",
+      "itemStyle": {
+        "color": "#bf242a",
+        "borderRadius": [
+          10,
+          0,
+          0,
+          10
+        ]
+      },
+      "label": {
+        "show": false,
+        "color": "#ffffff",
+        "formatter": "{c}%"
+      },
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        "0.00"
+      ]
+    },
+    {
+      "name": "看跌",
+      "type": "bar",
+      "stack": "total",
+      "barWidth": 20,
+      "itemStyle": {
+        "color": "#006e54",
+        "borderRadius": 10
+      },
+      "label": {
+        "show": true,
+        "color": "#ffffff",
+        "formatter": "{c}%"
+      },
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        "100.00"
+      ]
+    }
+  ],
+  "axisPointer": {}
+}

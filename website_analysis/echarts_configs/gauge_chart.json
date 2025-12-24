@@ -1,0 +1,83 @@
+{
+  "backgroundColor": {
+    "type": "pattern",
+    "image": {},
+    "repeat": "repeat"
+  },
+  "title": {
+    "text": "奇货商品多空领先指标",
+    "subtext": "2025-12-24 22:36:00",
+    "x": "center",
+    "textStyle": {
+      "fontSize": 18
+    },
+    "top": 10,
+    "left": "center"
+  },
+  "toolbox": {
+    "show": true,
+    "right": 0,
+    "top": 10,
+    "feature": {
+      "saveAsImage": {
+        "type": "png",
+        "pixelRatio": 2
+      },
+      "dataView": {
+        "readOnly": true
+      }
+    }
+  },
+  "tooltip": {
+    "formatter": "{a} <br/>{c}",
+    "backgroundColor": "rgba(255,255,255,0.8)"
+  },
+  "pointer": {
+    "itemStyle": {
+      "color": "#999999"
+    }
+  },
+  "series": [
+    {
+      "min": 0,
+      "max": 100,
+      "name": "多空领先指标",
+      "type": "gauge",
+      "animation": true,
+      "center": [
+        "50%",
+        "60%"
+      ],
+      "radius": "75%",
+      "detail": {
+        "formatter": "{value}",
+        "fontSize": 18,
+        "color": "auto"
+      },
+      "data": [
+        {
+          "value": 69
+        }
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": [
+            [
+              0.4,
+              "#006e54"
+            ],
+            [
+              0.6,
+              "#ca8622"
+            ],
+            [
+              1,
+              "#bf242a"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "axisPointer": {}
+}

@@ -1,0 +1,7 @@
+{
+  "chartId": "variety_position_chart",
+  "instanceId": "ec_1766586057075",
+  "title": "螺纹钢2605 多空持仓图",
+  "description": "显示总持仓、多头净持仓、空头净持仓的时间序列图，结合K线图",
+  "note": "此配置已从实际页面提取，包含完整的数据和配置"
+}
