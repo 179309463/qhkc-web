@@ -20,12 +20,12 @@ export default function Home() {
         <section className="mb-4">
           <h2 className="text-lg font-bold mb-3 text-gray-900">头条精华</h2>
           
-          {/* 2行3列网格布局 */}
-          <div className="grid grid-cols-3 gap-4">
+          {/* 一行6个网格布局 */}
+          <div className="grid grid-cols-6 gap-3">
             {/* 卡片1：多空领先指标 */}
             <a
               href="#"
-              className="block bg-[#0054a6] rounded border-2 border-dashed border-red-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#0054a6] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -47,7 +47,7 @@ export default function Home() {
             {/* 卡片2：日内推土机 */}
             <a
               href="#"
-              className="block bg-[#0054a6] rounded border-2 border-dashed border-green-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#0054a6] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -71,7 +71,7 @@ export default function Home() {
             {/* 卡片3：乾坤归一 */}
             <a
               href="#"
-              className="block bg-[#0054a6] rounded border-2 border-dashed border-green-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#0054a6] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function Home() {
             {/* 卡片4：外资动向 */}
             <a
               href="#"
-              className="block bg-[#bf242a] rounded border-2 border-dashed border-red-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#bf242a] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -118,7 +118,7 @@ export default function Home() {
             {/* 卡片5：大佬动向 */}
             <a
               href="#"
-              className="block bg-[#bf242a] rounded border-2 border-dashed border-red-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#bf242a] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function Home() {
             {/* 卡片6：亏货动向 */}
             <a
               href="#"
-              className="block bg-[#006e54] rounded border-2 border-dashed border-green-600 p-3 hover:opacity-90 transition-opacity"
+              className="block bg-[#006e54] rounded border-2 border-dashed border-green-500 p-3 hover:opacity-90 transition-opacity"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -296,6 +296,29 @@ export default function Home() {
 
           {/* 右侧边栏 */}
           <div className="col-span-4 space-y-4">
+            {/* VIP广告横幅 */}
+            <div className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-lg overflow-hidden">
+              {/* 星空背景效果 */}
+              <div className="absolute inset-0 opacity-30">
+                <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <div className="absolute top-20 right-20 w-1 h-1 bg-white rounded-full animate-pulse delay-100"></div>
+                <div className="absolute bottom-10 left-1/3 w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-200"></div>
+                <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-white rounded-full animate-pulse delay-300"></div>
+              </div>
+              
+              <div className="relative p-6 text-center">
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  奇货可查
+                </h2>
+                <p className="text-xl text-white mb-1">开户即可</p>
+                <p className="text-3xl font-bold text-yellow-400 mb-2">免费领VIP</p>
+                <p className="text-sm text-blue-200 mb-4">五大福利，知晓未来</p>
+                <button className="px-8 py-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold rounded-full hover:from-yellow-500 hover:to-yellow-600 transition-all transform hover:scale-105">
+                  广告
+                </button>
+              </div>
+            </div>
+
             {/* 用户信息卡片 */}
             <div className="bg-white rounded shadow-sm p-4">
               <div className="flex flex-col items-center mb-4">
